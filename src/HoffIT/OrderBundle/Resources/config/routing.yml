@@ -1,0 +1,7 @@
+hoff_it_order_homepage:
+    path:     /
+    defaults: { _controller: HoffITOrderBundle:Front:index }
+
+hoff_it_order_name:
+    path:     /name/{name}
+    defaults: { _controller: HoffITOrderBundle:Front:name }

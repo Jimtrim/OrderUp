@@ -1,0 +1,4 @@
+hoff_it_order:
+    resource: "@HoffITOrderBundle/Resources/config/routing.yml"
+    prefix:   /
+

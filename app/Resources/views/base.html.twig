@@ -3,17 +3,23 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{% block title %}Test Application{% endblock %}</title>
-    {% block stylesheets %}{% endblock %}
+    {% block stylesheets %}
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    {% endblock %}
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
 </head>
 <body>
-
-<div id="content">
+<div id="header">
+    {% block header %}{% endblock %}
+</div>
+<div id="content" class="container">
     {% block content %}{% endblock %}
 </div>
 
 <div id="scripts">
-    {% block scripts %}{% endblock %}
+    {% block scripts %}
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    {% endblock %}
 </div>
 
 </body>

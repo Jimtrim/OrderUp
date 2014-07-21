@@ -1,3 +1,5 @@
+.gitignore
+
 # Bootstrap
 app/bootstrap*
 
@@ -18,3 +20,4 @@ composer.phar
 # Misc
 .idea/
 UPGRADE-*
+.vagrant
